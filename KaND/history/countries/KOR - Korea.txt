@@ -1,0 +1,66 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+oob = "KOR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	basic_train = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+}
+
+add_ideas = {
+	idea_KOR_unorganised_state
+}
+
+set_convoys = 5
+
+recruit_character = KOR_Ji_Cheong_cheon
+recruit_character = KOR_Kim_Il_sung
+
+set_variable = { pcid_buildspeed = 0.05 }
+set_variable = { pcmi_bunkerspeed = 3 }
+set_variable = { pcmi_outputarms = 0.1 }
+set_variable = { pcmi_outputdock = 0.1 }
+set_variable = { pcmi_art_ic = 0}
+set_variable = { ps_polcost = 1 }
+set_variable = { ps_instab = -0.25 }
+set_variable = { ps_bureaucracy = 0.5 }
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 4
+	fascism = 1
+	communism = 80
+	neutrality = 15
+}
+
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = GFX_portrait_Syngman_Rhee
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = GFX_portrait_Yi_Un
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

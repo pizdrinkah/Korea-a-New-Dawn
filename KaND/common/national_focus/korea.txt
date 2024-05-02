@@ -1,0 +1,180 @@
+focus_tree = {
+    id=korean_focus
+    
+    country = {
+        factor=0
+    
+        modifier = {
+            add = 10
+            tag = KOR
+        }
+    }
+    default=no
+
+    continuous_focus_position = { x = 50 y = 2000 }
+
+    focus = {
+        id=KOR_revolution
+        icon=GFX_focus_KOR_revolution
+        
+        x = 3
+        y = 5
+
+        cost = 1
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    
+    focus = {
+        id=KOR_establish_military_structure
+        icon=GFX_focus_generic_military_mission
+        
+        x=1
+        y=1
+        relative_position_id = KOR_revolution
+
+        cost = 1
+        
+        prerequisite = { focus = KOR_revolution }
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+        
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            add_ideas = idea_KOR_kla
+        }
+    }
+
+    focus = {
+        id=KOR_secure_administration
+        icon=GFX_focus_KOR_secure_administration
+        
+        x=3
+        y=1
+        relative_position_id = KOR_revolution
+
+        cost = 1
+        
+        prerequisite = { focus = KOR_revolution }
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+        
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            remove_ideas = { idea_KOR_unorganised_state }
+            add_dynamic_modifier = { modifier = idea_KOR_provisional_state }
+        }
+    }
+
+    focus = {
+        id=KOR_establish_pcid
+        icon=GFX_focus_KOR_establish_pcid
+        
+        x=-1
+        y=1
+        relative_position_id = KOR_revolution
+
+        cost = 1
+        
+        prerequisite = { focus = KOR_revolution }
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+        
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            add_dynamic_modifier = { modifier = idea_KOR_pcid }
+        }
+    }
+
+    focus = {
+        id=KOR_establish_pcmi
+        icon=GFX_focus_KOR_establish_pcmi
+        
+        x=-3
+        y=1
+        relative_position_id = KOR_revolution
+
+        cost = 1
+        
+        prerequisite = { focus = KOR_revolution }
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+        
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            add_dynamic_modifier = { modifier = idea_KOR_pcmi }
+        }
+    }
+    focus = {
+        id=KOR_haeju_artillery_plant
+        icon=GFX_focus_KOR_haeju_artillery_plant
+        
+        x=1
+        y=1
+        relative_position_id = KOR_establish_pcmi
+
+        cost = 1
+        
+        prerequisite = { focus = KOR_revolution }
+        
+        available = {
+            NOT = {is_in_faction_with = JAP}
+            has_capitulated = no
+            has_war = yes
+
+        }
+        
+        cancel_if_invalid=yes
+        continue_if_invalid=no
+        available_if_capitulated=no
+
+        completion_reward = {
+            set_variable = { pcmi_art_ic = -0.1}
+        }
+    }
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+
+    spriteType = {
+
+	    name = "GFX_focus_KOR_revolution"
+
+	    texturefile = "/gfx/interface/goals/GFX_focus_KOR_revolution.dds"
+
+    }
+
+    spriteType = {
+
+	    name = "GFX_focus_KOR_establish_pcid"
+
+	    texturefile = "/gfx/interface/goals/GFX_focus_KOR_establish_pcid.dds"
+
+    }
+
+    spriteType = {
+
+	    name = "GFX_focus_KOR_establish_pcmi"
+
+	    texturefile = "/gfx/interface/goals/GFX_focus_KOR_establish_pcmi.dds"
+
+    }
+
+    spriteType = {
+
+	    name = "GFX_focus_KOR_secure_administration"
+
+	    texturefile = "/gfx/interface/goals/GFX_focus_KOR_secure_administration.dds"
+
+    }
+}
+

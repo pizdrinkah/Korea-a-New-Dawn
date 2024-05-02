@@ -1,0 +1,18 @@
+spriteTypes = {
+    
+    spriteType = {
+	    name = "GFX_idea_KOR_kla"
+	    texturefile = "gfx/interface/ideas/KOR_kla.dds"
+    
+    }
+    spriteType = {
+	    name = "GFX_idea_KOR_pcid"
+	    texturefile = "gfx/interface/ideas/KOR_pcid.dds"
+    
+    }
+    spriteType = {
+	    name = "GFX_idea_KOR_unorganised_state"
+	    texturefile = "gfx/interface/ideas/KOR_unorganised_state.dds"
+    
+    }
+}

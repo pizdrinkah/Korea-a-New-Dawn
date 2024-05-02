@@ -1,0 +1,26 @@
+
+idea_KOR_pcid = {
+    icon = "GFX_idea_KOR_pcid"
+    enable = { always = yes }
+    production_speed_buildings_factor = pcid_buildspeed
+}
+idea_KOR_pcmi = {
+    icon = "GFX_idea_KOR_pcmi"
+    enable = { always = yes }
+    production_speed_bunker_factor = pcmi_bunkerspeed
+    industrial_capacity_factory = pcmi_outputarms
+    industrial_capacity_dockyard = pcmi_outputdock
+    artillery_equipment = {
+        build_cost_ic = pcmi_art_ic
+        instant = yes
+    }
+}
+idea_KOR_provisional_state = {
+    icon = "GFX_idea_KOR_unorganised_state"
+    enable = { always = yes }
+    political_power_cost = ps_polcost
+    stability_factor = ps_instab
+    drift_defence_factor = ps_instab
+    political_advisor_cost_factor = ps_bureaucracy
+    defensive_war_stability_factor = 0.4
+}

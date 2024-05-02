@@ -1,0 +1,28 @@
+characters = {
+    KOR_Ji_Cheong_cheon = {
+        name=KOR_CHARACTER_JI_CHEONG_CHEON
+        portraits={
+            civilian={
+                large="GFX_portrait_ji_cheong_cheon"
+            }
+        }
+        country_leader={
+            ideology=despotism
+            traits={ dictator }
+            desc = JI_CHEONG_CHEON_DESC
+        }
+    }
+    KOR_Kim_Il_sung = {
+        name=KOR_CHARACTER_KIM_IL_SUNG
+        portraits={
+            civilian={
+                large="GFX_portrait_kim_il_sung"
+            }
+        }
+        country_leader={
+            ideology=stalinism
+            traits = { dictator }
+            desc = KIM_IL_SUNG_DESC
+        }
+    }
+}

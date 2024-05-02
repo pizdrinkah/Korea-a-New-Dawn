@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+        idea_KOR_kla = {
+            picture = KOR_kla
+            modifier = {
+                army_core_attack_factor = 0.10
+                army_core_defence_factor = 0.10
+                equipment_capture = 0.5
+            }
+        }
+        idea_KOR_unorganised_state = {
+            picture = KOR_unorganised_state
+            modifier = {
+                political_power_cost = 1
+                stability_factor = -0.5
+                drift_defence_factor = -0.25
+                political_advisor_cost_factor = 0.5
+                defensive_war_stability_factor = 0.4
+            }
+        }
+    }
+}
