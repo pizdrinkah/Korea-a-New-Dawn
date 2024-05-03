@@ -1,0 +1,30 @@
+# Korean Events
+
+add_namespace = korea
+
+#WoI peace offer
+country_event = {
+    id = korea.1
+    title = korea.1.t
+    desc = korea.1.d
+    picture = GFX_report_event_japanese_chinese_surrender
+
+    is_triggered_only = yes
+
+    option = {
+        name = korea.1.a
+        KOR = { transfer_state =  970}
+        KOR = { transfer_state =  972}
+        KOR = { transfer_state =  973}
+        KOR = { transfer_state =  974}
+        KOR = { transfer_state =  975}
+        KOR = { transfer_state =  976}
+        KOR = { transfer_state =  977}
+        KOR = { transfer_state =  978}
+        white_peace = {
+            tag = JAP
+            message = korjap_peace_tt
+        }
+
+    }
+}

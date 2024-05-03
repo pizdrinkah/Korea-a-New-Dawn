@@ -31,5 +31,12 @@ spriteTypes = {
 	    texturefile = "/gfx/interface/goals/GFX_focus_KOR_secure_administration.dds"
 
     }
+
+    spriteType = {
+
+        name = "GFX_focus_KOR_haeju_artillery_plant"
+
+        texturefile = "/gfx/interface/goals/GFX_focus_KOR_haeju_artillery_plant.dds"
+    }
 }
 

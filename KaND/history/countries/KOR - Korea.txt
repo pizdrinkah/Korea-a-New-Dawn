@@ -25,7 +25,6 @@ set_variable = { pcid_buildspeed = 0.05 }
 set_variable = { pcmi_bunkerspeed = 3 }
 set_variable = { pcmi_outputarms = 0.1 }
 set_variable = { pcmi_outputdock = 0.1 }
-set_variable = { pcmi_art_ic = 0}
 set_variable = { ps_polcost = 1 }
 set_variable = { ps_instab = -0.25 }
 set_variable = { ps_bureaucracy = 0.5 }
